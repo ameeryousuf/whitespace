@@ -103,13 +103,13 @@ export default function Home() {
 
         <section
           style={{
-            backgroundImage: "url('bgwires1.png')"
+            backgroundImage: "url('/bgwires1.png')"
           }}
-          className="px-40 py-40 bg-cover bg-center w-full bg-[#043873] flex justify-start items-center gap-10"
+          className="px-4 sm:px-8 lg:px-16 xl:px-40 pt-28 pb-16 sm:pt-32 sm:pb-20 lg:py-40 bg-cover bg-center w-full bg-[#043873] flex flex-col lg:flex-row justify-start items-center gap-10"
         >
-          <div className="w-[40vw]  flex flex-col justify-center items-start gap-5 text-white">
-            <h1 className="text-5xl font-bold leading-16">
-              Get More Done with <br /> Whitespace
+          <div className="w-full lg:w-[40%] flex flex-col justify-center items-center text-center lg:items-start lg:text-left gap-5 text-white">
+            <h1 className="text-4xl sm:text-5xl font-bold leading-tight sm:leading-16">
+              Get More Done with <br className="hidden sm:block" /> Whitespace
             </h1>
             <p className="text-gray-200 leading-8">
               Project management software that enables your teams to collaborate, plan, analyze and manage everyday tasks.
@@ -119,16 +119,14 @@ export default function Home() {
               <ArrowRight size={15} />
             </button>
           </div>
-          <div
-
-            className="w-[60vw] h-full flex justify-end items-center"
-          >
+          <div className="w-full lg:w-[60%] flex justify-center lg:justify-end items-center">
             <Image
               src="/WorkTogether.png"
               alt="Team working together"
               width={500}
               height={500}
-              className="object-cover"
+              sizes="(min-width: 1024px) 500px, 90vw"
+              className="w-full h-auto max-w-125 object-cover"
               priority
             />
           </div>
@@ -136,19 +134,19 @@ export default function Home() {
 
         <section
           style={{
-            backgroundImage: "url('bgwires2.png')",
+            backgroundImage: "url('/bgwires2.png')",
             backgroundPosition: "0% 60%",
             backgroundRepeat: "no-repeat",
             backgroundSize: "20%",
           }}
-          className="px-40 py-20 w-full flex justify-center items-center text-black gap-10"
+          className="px-4 sm:px-8 lg:px-16 xl:px-40 py-16 sm:py-20 lg:py-24 w-full flex flex-col lg:flex-row justify-center items-center text-black gap-10"
         >
-          <div className="w-[50%] h-full flex flex-col justify-center items-start gap-5">
-            <h1 className="text-6xl font-bold leading-16">
-              Project <br />
+          <div className="w-full lg:w-1/2 h-full flex flex-col justify-center items-center text-center lg:items-start lg:text-left gap-5">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight lg:leading-16">
+              Project <br className="hidden sm:block" />
               <span
                 style={{
-                  backgroundImage: "url('bgUnderline.png')",
+                  backgroundImage: "url('/bgUnderline.png')",
                   backgroundPosition: "0% 100%",
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "100% auto",
@@ -166,36 +164,36 @@ export default function Home() {
               <ArrowRight size={15} />
             </button>
           </div>
-          <div className="w-[50%] flex justify-end items-center">
+          <div className="w-full lg:w-1/2 flex justify-center lg:justify-end items-center">
             <Image
               src="/WorkTogether.png"
               alt="Team working together"
               width={500}
               height={500}
-              className="object-cover"
-              priority
+              sizes="(min-width: 1024px) 500px, 90vw"
+              className="w-full h-auto max-w-125 object-cover"
             />
           </div>
         </section>
 
-        <section className="w-full px-40 py-20 flex items-stretch justify-center text-black gap-10">
-          <div className="w-[50%] overflow-hidden flex justify-start items-center">
+        <section className="w-full px-4 sm:px-8 lg:px-16 xl:px-40 py-16 sm:py-20 lg:py-24 flex flex-col lg:flex-row items-center justify-center text-black gap-10">
+          <div className="w-full lg:w-1/2 overflow-hidden flex justify-center lg:justify-start items-center">
             <Image
               src="/WorkTogether.png"
               alt="Team working together"
               width={500}
               height={500}
-              className="object-cover"
-              priority
+              sizes="(min-width: 1024px) 500px, 90vw"
+              className="w-full h-auto max-w-125 object-cover"
             />
           </div>
 
-          <div className="w-[50%] flex flex-col justify-center items-start gap-5">
-            <h1 className="text-6xl font-bold leading-16">
+          <div className="w-full lg:w-1/2 flex flex-col justify-center items-center text-center lg:items-start lg:text-left gap-5">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight lg:leading-16">
               Work
               <span
                 style={{
-                  backgroundImage: "url('bgUnderline.png')",
+                  backgroundImage: "url('/bgUnderline.png')",
                   backgroundPosition: "0% 100%",
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "100% auto",
@@ -216,59 +214,59 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="bg-[#043873] w-full px-40 py-20 flex items-stretch justify-center gap-10 text-white">
-          <div className="w-[50%] flex flex-col justify-center items-start gap-5">
-            <h1 className="text-6xl font-bold leading-16">
+        <section className="bg-[#043873] w-full px-4 sm:px-8 lg:px-16 xl:px-40 py-16 sm:py-20 lg:py-24 flex flex-col lg:flex-row items-center justify-center gap-10 text-white">
+          <div className="w-full lg:w-1/2 flex flex-col justify-center items-center text-center lg:items-start lg:text-left gap-5">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight lg:leading-16">
               Use as
               <span
                 style={{
-                  backgroundImage: "url('bgUnderline.png')",
+                  backgroundImage: "url('/bgUnderline.png')",
                   backgroundPosition: "0% 100%",
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "100% auto",
                 }}
                 className="pb-2 px-4"
               >
-                Extention
+                Extension
               </span>
             </h1>
             <p className="text-gray-200 leading-8">
               Use the web clipper extension, available on Chrome and Firefox, to save web pages or take screenshots as notes.
             </p>
             <button className="text-white bg-[#4F9CF9] text-sm px-6 py-2 rounded-sm hover:cursor-pointer duration-300 transition-all ease-out flex justify-center items-center gap-10">
-              Let's Go
+              Let&apos;s Go
               <ArrowRight size={15} />
             </button>
           </div>
-          <div className="w-[50%] overflow-hidden flex justify-end items-center">
+          <div className="w-full lg:w-1/2 overflow-hidden flex justify-center lg:justify-end items-center">
             <Image
               src="/WorkTogether.png"
               alt="Team working together"
               width={500}
               height={500}
-              className="object-cover"
-              priority
+              sizes="(min-width: 1024px) 500px, 90vw"
+              className="w-full h-auto max-w-125 object-cover"
             />
           </div>
         </section>
 
-        <section className="w-full px-40 py-20 flex items-stretch justify-center text-black gap-10 ">
-          <div className="w-[50%] overflow-hidden flex justify-start items-center">
+        <section className="w-full px-4 sm:px-8 lg:px-16 xl:px-40 py-16 sm:py-20 lg:py-24 flex flex-col lg:flex-row items-center justify-center text-black gap-10">
+          <div className="w-full lg:w-1/2 overflow-hidden flex justify-center lg:justify-start items-center">
             <Image
               src="/WorkTogether.png"
               alt="Team working together"
               width={500}
               height={500}
-              className="object-cover"
-              priority
+              sizes="(min-width: 1024px) 500px, 90vw"
+              className="w-full h-auto max-w-125 object-cover"
             />
           </div>
-          <div className="w-[50%] flex flex-col justify-center items-start gap-5">
-            <h1 className="text-6xl font-bold leading-16">
+          <div className="w-full lg:w-1/2 flex flex-col justify-center items-center text-center lg:items-start lg:text-left gap-5">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight lg:leading-16">
               Customize it to
               <span
                 style={{
-                  backgroundImage: "url('bgUnderline.png')",
+                  backgroundImage: "url('/bgUnderline.png')",
                   backgroundPosition: "0% 100%",
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "100% auto",
@@ -282,20 +280,20 @@ export default function Home() {
               Customise the app with plugins, custom themes and multiple text editors (Rich Text or Markdown). Or create your own scripts and plugins using the Extension API.
             </p>
             <button className="text-white bg-[#4F9CF9] text-sm px-6 py-2 rounded-sm hover:cursor-pointer duration-300 transition-all ease-out flex justify-center items-center gap-10">
-              Let's Go
+              Let&apos;s Go
               <ArrowRight size={15} />
             </button>
           </div>
 
         </section>
 
-        <section className="w-full px-40 py-20 min-h-screen flex justify-center items-center gap-10 text-black">
-          <div className="w-full min-h-screen flex flex-col justify-start items-center gap-10">
-            <h1 className="text-6xl font-bold leading-16">
+        <section className="w-full px-4 sm:px-8 lg:px-16 xl:px-40 py-16 sm:py-20 lg:py-24 lg:min-h-screen flex justify-center items-center gap-10 text-black">
+          <div className="w-full flex flex-col justify-start items-center gap-10">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight lg:leading-16 text-center">
               Choose
               <span
                 style={{
-                  backgroundImage: "url('bgUnderline.png')",
+                  backgroundImage: "url('/bgUnderline.png')",
                   backgroundPosition: "0% 100%",
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "100% auto",
@@ -305,15 +303,15 @@ export default function Home() {
                 Your Plan
               </span>
             </h1>
-            <p className="w-[80%] text-gray-700 leading-8 text-center">
+            <p className="w-full sm:w-[80%] text-gray-700 leading-8 text-center">
               Customise the app with plugins, custom themes and multiple text editors (Rich Text or Markdown). Or create your own scripts and plugins using the Extension API.
             </p>
-            <div className="w-full flex justify-center items-center gap-16">
+            <div className="w-full flex flex-col lg:flex-row justify-center items-center lg:items-stretch gap-8 lg:gap-16">
               {plans.map((plan, index) => (
                 <div
                   key={index}
-                  className={`flex flex-col justify-center items-start p-8 rounded-2xl ${plan.isRecommended
-                    ? "bg-[#043873] text-white scale-125"
+                  className={`w-full max-w-sm lg:max-w-none lg:w-auto flex flex-col justify-center items-start p-8 rounded-2xl ${plan.isRecommended
+                    ? "bg-[#043873] text-white lg:scale-110"
                     : "bg-white text-black border border-[#FFE492]"
                     }`}
                 >
@@ -368,18 +366,18 @@ export default function Home() {
 
         <section
           style={{
-            backgroundImage: "url('bgwires3.png')",
+            backgroundImage: "url('/bgwires3.png')",
             backgroundPosition: "0% 50%",
             backgroundRepeat: "no-repeat",
             backgroundSize: "20%",
           }}
-          className="bg-[#043873] mt-10 w-full min-h-[50vh] px-40 py-20 flex flex-col justify-center items-center gap-10"
+          className="bg-[#043873] mt-10 w-full lg:min-h-[50vh] px-4 sm:px-8 lg:px-16 xl:px-40 py-16 sm:py-20 lg:py-24 flex flex-col justify-center items-center gap-10 text-white"
         >
-          <h1 className="text-6xl font-bold leading-16 w-[80%]">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight lg:leading-16 w-full sm:w-[80%] text-center">
             Your work, everywhere
             <span
               style={{
-                backgroundImage: "url('bgUnderline2.png')",
+                backgroundImage: "url('/bgUnderline2.png')",
                 backgroundPosition: "0% 100%",
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "100% auto",
@@ -389,7 +387,7 @@ export default function Home() {
               you are
             </span>
           </h1>
-          <p className="w-[70%] text-gray-200 leading-8 text-center">
+          <p className="w-full sm:w-[70%] text-gray-200 leading-8 text-center">
             Customise the app with plugins, custom themes and multiple text editors (Rich Text or Markdown). Or create your own scripts and plugins using the Extension API.
           </p>
           <button className='text-white bg-[#4F9CF9] text-sm px-6 py-2 rounded-sm hover:cursor-pointer duration-300 transition-all ease-out flex justify-center items-center gap-2'>
@@ -398,14 +396,14 @@ export default function Home() {
           </button>
         </section>
 
-        <section className="w-full min-h-screen px-40 py-20 flex flex-col justify-center items-center text-black">
-          <div className="w-full min-h-[50vh] flex justify-center items-center gap-10">
-            <div className="w-[50%] h-full flex flex-col justify-center items-start gap-5">
-              <h1 className="text-6xl font-bold leading-16">
+        <section className="w-full lg:min-h-screen px-4 sm:px-8 lg:px-16 xl:px-40 py-16 sm:py-20 lg:py-24 flex flex-col justify-center items-center text-black gap-16 lg:gap-10">
+          <div className="w-full lg:min-h-[50vh] flex flex-col lg:flex-row justify-center items-center gap-10">
+            <div className="w-full lg:w-1/2 h-full flex flex-col justify-center items-center text-center lg:items-start lg:text-left gap-5">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight lg:leading-16">
                 100%
                 <span
                   style={{
-                    backgroundImage: "url('bgUnderline.png')",
+                    backgroundImage: "url('/bgUnderline.png')",
                     backgroundPosition: "0% 100%",
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "100% auto",
@@ -416,30 +414,30 @@ export default function Home() {
                 </span>
               </h1>
               <p className="text-gray-700 leading-8">
-                The app is open source and your notes are saved to an open format, so you'll always have access to them. Uses End-To-End Encryption (E2EE) to secure your notes and ensure no-one but yourself can access them.
+                The app is open source and your notes are saved to an open format, so you&apos;ll always have access to them. Uses End-To-End Encryption (E2EE) to secure your notes and ensure no-one but yourself can access them.
               </p>
               <button className='text-white bg-[#4F9CF9] text-sm px-6 py-2 rounded-sm hover:cursor-pointer duration-300 transition-all ease-out flex justify-center items-center gap-2'>
                 Read more
                 <ArrowRight size={15} />
               </button>
             </div>
-            <div className="w-[50%] flex justify-end items-center">
+            <div className="w-full lg:w-1/2 flex justify-center lg:justify-end items-center">
               <Image
                 src="/yourData.png"
-                alt="Team working together"
+                alt="Secure your data"
                 width={500}
                 height={500}
-                className="object-cover"
-                priority
+                sizes="(min-width: 1024px) 500px, 90vw"
+                className="w-full h-auto max-w-125 object-cover"
               />
             </div>
           </div>
-          <div className="w-full min-h-[50vh] flex flex-col justify-center items-center gap-10">
-            <h1 className="text-6xl font-bold leading-16">
+          <div className="w-full flex flex-col justify-center items-center gap-10">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight lg:leading-16">
               Our
               <span
                 style={{
-                  backgroundImage: "url('bgUnderline.png')",
+                  backgroundImage: "url('/bgUnderline.png')",
                   backgroundPosition: "0% 100%",
                   backgroundRepeat: "no-repeat",
                   backgroundSize: "100% auto",
@@ -449,7 +447,7 @@ export default function Home() {
                 sponsors
               </span>
             </h1>
-            <div className="w-full flex justify-between items-center">
+            <div className="w-full flex flex-wrap justify-center lg:justify-between items-center gap-x-10 gap-y-6">
               {sponsors.map((s, i) => (
                 <Image
                   key={i}
@@ -457,6 +455,7 @@ export default function Home() {
                   width={s.size}
                   height={s.size}
                   alt={s.alt}
+                  className="h-8 sm:h-10 lg:h-12 w-auto object-contain"
                 />
               ))}
             </div>
@@ -465,23 +464,23 @@ export default function Home() {
 
         <section
           style={{
-            backgroundImage: "url('bgWires4.png')"
+            backgroundImage: "url('/bgWires4.png')"
           }}
-          className="bg-[#043873] bg-cover bg-center w-full min-h-[60vh] px-40 py-20 flex justify-center items-center gap-10"
+          className="bg-[#043873] bg-cover bg-center w-full lg:min-h-[60vh] px-4 sm:px-8 lg:px-16 xl:px-40 py-16 sm:py-20 lg:py-24 flex flex-col lg:flex-row justify-center items-center gap-10"
         >
-          <div className="w-[50%] overflow-hidden flex justify-start items-center">
+          <div className="w-full lg:w-1/2 overflow-hidden flex justify-center lg:justify-start items-center">
             <Image
               src="/Apps.png"
-              alt="Team working together"
+              alt="Favorite apps integration"
               width={500}
               height={500}
-              className="object-cover"
-              priority
+              sizes="(min-width: 1024px) 500px, 90vw"
+              className="w-full h-auto max-w-125 object-cover"
             />
           </div>
 
-          <div className="w-[50%] flex flex-col justify-center items-start gap-5">
-            <h1 className="text-6xl font-bold leading-16">
+          <div className="w-full lg:w-1/2 flex flex-col justify-center items-center text-center lg:items-start lg:text-left gap-5 text-white">
+            <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold leading-tight lg:leading-16">
               Work with Your Favorite Apps Using whitepace
             </h1>
             <p className="text-gray-200 leading-8">
@@ -494,12 +493,12 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="w-full min-h-screen px-40 py-2 flex flex-col justify-center items-center gap-10 text-black">
-          <h1 className="text-6xl font-bold leading-16">
+        <section className="w-full lg:min-h-screen px-4 sm:px-8 lg:px-16 xl:px-40 py-16 sm:py-20 lg:py-24 flex flex-col justify-center items-center gap-10 text-black">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight lg:leading-16 text-center">
             What our client
             <span
               style={{
-                backgroundImage: "url('bgUnderline.png')",
+                backgroundImage: "url('/bgUnderline.png')",
                 backgroundPosition: "0% 100%",
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "100% auto",
@@ -510,7 +509,7 @@ export default function Home() {
             </span>
           </h1>
 
-          <div className="w-full grid grid-cols-3 gap-6">
+          <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {testimonials.map((t, i) => (
               <div
                 key={i}
@@ -560,11 +559,11 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="bg-[#043873] w-full min-h-[80vh] px-40 py-20 flex flex-col justify-center items-center gap-5">
-          <h1 className="text-6xl font-bold leading-16">
+        <section className="bg-[#043873] w-full lg:min-h-[80vh] px-4 sm:px-8 lg:px-16 xl:px-40 py-16 sm:py-20 lg:py-24 flex flex-col justify-center items-center gap-5 text-center">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight lg:leading-16">
             Try Whitespace today
           </h1>
-          <p className="text-gray-200 leading-8 w-[25%] text-center">
+          <p className="text-gray-200 leading-8 w-full sm:w-2/3 md:w-1/2 lg:w-[25%] text-center">
             Get started for free. Add your whole team as your needs grow.
           </p>
           <button className="text-white bg-[#4F9CF9] text-sm px-6 py-2 rounded-sm hover:cursor-pointer duration-300 transition-all ease-out flex justify-center items-center gap-10">
@@ -579,6 +578,7 @@ export default function Home() {
             width={200}
             height={200}
             alt="app-icon"
+            className="w-32 sm:w-40 lg:w-50 h-auto"
           />
         </section>
         <Footer />
