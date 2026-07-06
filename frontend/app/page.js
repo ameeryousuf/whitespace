@@ -142,7 +142,7 @@ export default function Home() {
           className="px-4 sm:px-8 lg:px-16 xl:px-40 py-16 sm:py-20 lg:py-24 w-full flex flex-col lg:flex-row justify-center items-center text-black gap-10"
         >
           <div className="w-full lg:w-1/2 h-full flex flex-col justify-center items-center text-center lg:items-start lg:text-left gap-5">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight lg:leading-16">
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight lg:leading-16">
               Project <br className="hidden sm:block" />
               <span
                 style={{
@@ -155,7 +155,7 @@ export default function Home() {
               >
                 Management
               </span>
-            </h1>
+            </h2>
             <p className="text-gray-700 leading-8">
               Images, videos, PDFs and audio files are supported. Create math expressions and diagrams directly from the app. Take photos with the mobile app and save them to a note.
             </p>
@@ -189,7 +189,7 @@ export default function Home() {
           </div>
 
           <div className="w-full lg:w-1/2 flex flex-col justify-center items-center text-center lg:items-start lg:text-left gap-5">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight lg:leading-16">
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight lg:leading-16">
               Work
               <span
                 style={{
@@ -202,7 +202,7 @@ export default function Home() {
               >
                 together
               </span>
-            </h1>
+            </h2>
             <p className="text-gray-700 leading-8">
               With whitepace, share your notes with your colleagues and collaborate on them.
               You can also publish a note to the internet and share the URL with others.
@@ -216,7 +216,7 @@ export default function Home() {
 
         <section className="bg-[#043873] w-full px-4 sm:px-8 lg:px-16 xl:px-40 py-16 sm:py-20 lg:py-24 flex flex-col lg:flex-row items-center justify-center gap-10 text-white">
           <div className="w-full lg:w-1/2 flex flex-col justify-center items-center text-center lg:items-start lg:text-left gap-5">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight lg:leading-16">
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight lg:leading-16">
               Use as
               <span
                 style={{
@@ -229,7 +229,7 @@ export default function Home() {
               >
                 Extension
               </span>
-            </h1>
+            </h2>
             <p className="text-gray-200 leading-8">
               Use the web clipper extension, available on Chrome and Firefox, to save web pages or take screenshots as notes.
             </p>
@@ -262,7 +262,7 @@ export default function Home() {
             />
           </div>
           <div className="w-full lg:w-1/2 flex flex-col justify-center items-center text-center lg:items-start lg:text-left gap-5">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight lg:leading-16">
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight lg:leading-16">
               Customize it to
               <span
                 style={{
@@ -275,7 +275,7 @@ export default function Home() {
               >
                 your needs
               </span>
-            </h1>
+            </h2>
             <p className="text-gray-700 leading-8">
               Customise the app with plugins, custom themes and multiple text editors (Rich Text or Markdown). Or create your own scripts and plugins using the Extension API.
             </p>
@@ -289,7 +289,7 @@ export default function Home() {
 
         <section className="w-full px-4 sm:px-8 lg:px-16 xl:px-40 py-16 sm:py-20 lg:py-24 lg:min-h-screen flex justify-center items-center gap-10 text-black">
           <div className="w-full flex flex-col justify-start items-center gap-10">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight lg:leading-16 text-center">
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight lg:leading-16 text-center">
               Choose
               <span
                 style={{
@@ -302,7 +302,7 @@ export default function Home() {
               >
                 Your Plan
               </span>
-            </h1>
+            </h2>
             <p className="w-full sm:w-[80%] text-gray-700 leading-8 text-center">
               Customise the app with plugins, custom themes and multiple text editors (Rich Text or Markdown). Or create your own scripts and plugins using the Extension API.
             </p>
@@ -373,7 +373,7 @@ export default function Home() {
           }}
           className="bg-[#043873] mt-10 w-full lg:min-h-[50vh] px-4 sm:px-8 lg:px-16 xl:px-40 py-16 sm:py-20 lg:py-24 flex flex-col justify-center items-center gap-10 text-white"
         >
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight lg:leading-16 w-full sm:w-[80%] text-center">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight lg:leading-16 w-full sm:w-[80%] text-center">
             Your work, everywhere
             <span
               style={{
@@ -386,7 +386,7 @@ export default function Home() {
             >
               you are
             </span>
-          </h1>
+          </h2>
           <p className="w-full sm:w-[70%] text-gray-200 leading-8 text-center">
             Customise the app with plugins, custom themes and multiple text editors (Rich Text or Markdown). Or create your own scripts and plugins using the Extension API.
           </p>
@@ -399,7 +399,7 @@ export default function Home() {
         <section className="w-full lg:min-h-screen px-4 sm:px-8 lg:px-16 xl:px-40 py-16 sm:py-20 lg:py-24 flex flex-col justify-center items-center text-black gap-16 lg:gap-10">
           <div className="w-full lg:min-h-[50vh] flex flex-col lg:flex-row justify-center items-center gap-10">
             <div className="w-full lg:w-1/2 h-full flex flex-col justify-center items-center text-center lg:items-start lg:text-left gap-5">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight lg:leading-16">
+              <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight lg:leading-16">
                 100%
                 <span
                   style={{
@@ -412,7 +412,7 @@ export default function Home() {
                 >
                   your data
                 </span>
-              </h1>
+              </h2>
               <p className="text-gray-700 leading-8">
                 The app is open source and your notes are saved to an open format, so you&apos;ll always have access to them. Uses End-To-End Encryption (E2EE) to secure your notes and ensure no-one but yourself can access them.
               </p>
@@ -433,7 +433,7 @@ export default function Home() {
             </div>
           </div>
           <div className="w-full flex flex-col justify-center items-center gap-10">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight lg:leading-16">
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight lg:leading-16">
               Our
               <span
                 style={{
@@ -446,7 +446,7 @@ export default function Home() {
               >
                 sponsors
               </span>
-            </h1>
+            </h2>
             <div className="w-full flex flex-wrap justify-center lg:justify-between items-center gap-x-10 gap-y-6">
               {sponsors.map((s, i) => (
                 <Image
@@ -480,9 +480,9 @@ export default function Home() {
           </div>
 
           <div className="w-full lg:w-1/2 flex flex-col justify-center items-center text-center lg:items-start lg:text-left gap-5 text-white">
-            <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold leading-tight lg:leading-16">
+            <h2 className="text-3xl sm:text-4xl lg:text-6xl font-bold leading-tight lg:leading-16">
               Work with Your Favorite Apps Using whitepace
-            </h1>
+            </h2>
             <p className="text-gray-200 leading-8">
               Whitepace teams up with your favorite software. Integrate with over 1000+ apps with Zapier to have all the tools you need for your project success.
             </p>
@@ -494,7 +494,7 @@ export default function Home() {
         </section>
 
         <section className="w-full lg:min-h-screen px-4 sm:px-8 lg:px-16 xl:px-40 py-16 sm:py-20 lg:py-24 flex flex-col justify-center items-center gap-10 text-black">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight lg:leading-16 text-center">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight lg:leading-16 text-center">
             What our client
             <span
               style={{
@@ -507,7 +507,7 @@ export default function Home() {
             >
               says
             </span>
-          </h1>
+          </h2>
 
           <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {testimonials.map((t, i) => (
@@ -560,9 +560,9 @@ export default function Home() {
         </section>
 
         <section className="bg-[#043873] w-full lg:min-h-[80vh] px-4 sm:px-8 lg:px-16 xl:px-40 py-16 sm:py-20 lg:py-24 flex flex-col justify-center items-center gap-5 text-center">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight lg:leading-16">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight lg:leading-16">
             Try Whitespace today
-          </h1>
+          </h2>
           <p className="text-gray-200 leading-8 w-full sm:w-2/3 md:w-1/2 lg:w-[25%] text-center">
             Get started for free. Add your whole team as your needs grow.
           </p>
