@@ -1,4 +1,6 @@
 import Footer from "@/components/Footer";
+import AnimatedSection from "@/components/AnimatedSection";
+import AnimatedCard from "@/components/AnimatedCard";
 import { ArrowRight, CheckCircle, Quote } from 'lucide-react';
 import Image from "next/image";
 
@@ -101,7 +103,7 @@ export default function Home() {
     <>
       <div className="w-full min-h-screen flex flex-col justify-start items-center">
 
-        <section
+        <div
           style={{
             backgroundImage: "url('/bgwires1.png')"
           }}
@@ -130,9 +132,9 @@ export default function Home() {
               priority
             />
           </div>
-        </section>
+        </div>
 
-        <section
+        <AnimatedSection
           style={{
             backgroundImage: "url('/bgwires2.png')",
             backgroundPosition: "0% 60%",
@@ -174,9 +176,9 @@ export default function Home() {
               className="w-full h-auto max-w-125 object-cover"
             />
           </div>
-        </section>
+        </AnimatedSection>
 
-        <section className="w-full px-4 sm:px-8 lg:px-16 xl:px-40 py-16 sm:py-20 lg:py-24 flex flex-col lg:flex-row items-center justify-center text-black gap-10">
+        <AnimatedSection className="w-full px-4 sm:px-8 lg:px-16 xl:px-40 py-16 sm:py-20 lg:py-24 flex flex-col lg:flex-row items-center justify-center text-black gap-10">
           <div className="w-full lg:w-1/2 overflow-hidden flex justify-center lg:justify-start items-center">
             <Image
               src="/WorkTogether.png"
@@ -212,9 +214,9 @@ export default function Home() {
               <ArrowRight size={15} />
             </button>
           </div>
-        </section>
+        </AnimatedSection>
 
-        <section className="bg-[#043873] w-full px-4 sm:px-8 lg:px-16 xl:px-40 py-16 sm:py-20 lg:py-24 flex flex-col lg:flex-row items-center justify-center gap-10 text-white">
+        <AnimatedSection className="bg-[#043873] w-full px-4 sm:px-8 lg:px-16 xl:px-40 py-16 sm:py-20 lg:py-24 flex flex-col lg:flex-row items-center justify-center gap-10 text-white">
           <div className="w-full lg:w-1/2 flex flex-col justify-center items-center text-center lg:items-start lg:text-left gap-5">
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight lg:leading-16">
               Use as
@@ -248,9 +250,9 @@ export default function Home() {
               className="w-full h-auto max-w-125 object-cover"
             />
           </div>
-        </section>
+        </AnimatedSection>
 
-        <section className="w-full px-4 sm:px-8 lg:px-16 xl:px-40 py-16 sm:py-20 lg:py-24 flex flex-col lg:flex-row items-center justify-center text-black gap-10">
+        <AnimatedSection className="w-full px-4 sm:px-8 lg:px-16 xl:px-40 py-16 sm:py-20 lg:py-24 flex flex-col lg:flex-row items-center justify-center text-black gap-10">
           <div className="w-full lg:w-1/2 overflow-hidden flex justify-center lg:justify-start items-center">
             <Image
               src="/WorkTogether.png"
@@ -285,9 +287,9 @@ export default function Home() {
             </button>
           </div>
 
-        </section>
+        </AnimatedSection>
 
-        <section className="w-full px-4 sm:px-8 lg:px-16 xl:px-40 py-16 sm:py-20 lg:py-24 lg:min-h-screen flex justify-center items-center gap-10 text-black">
+        <AnimatedSection className="w-full px-4 sm:px-8 lg:px-16 xl:px-40 py-16 sm:py-20 lg:py-24 lg:min-h-screen flex justify-center items-center gap-10 text-black">
           <div className="w-full flex flex-col justify-start items-center gap-10">
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight lg:leading-16 text-center">
               Choose
@@ -308,8 +310,9 @@ export default function Home() {
             </p>
             <div className="w-full flex flex-col lg:flex-row justify-center items-center lg:items-stretch gap-8 lg:gap-16">
               {plans.map((plan, index) => (
-                <div
+                <AnimatedCard
                   key={index}
+                  delay={index * 0.15}
                   className={`w-full max-w-sm lg:max-w-none lg:w-auto flex flex-col justify-center items-start p-8 rounded-2xl ${plan.isRecommended
                     ? "bg-[#043873] text-white lg:scale-110"
                     : "bg-white text-black border border-[#FFE492]"
@@ -358,13 +361,13 @@ export default function Home() {
                   >
                     Get Started
                   </button>
-                </div>
+                </AnimatedCard>
               ))}
             </div>
           </div>
-        </section>
+        </AnimatedSection>
 
-        <section
+        <AnimatedSection
           style={{
             backgroundImage: "url('/bgwires3.png')",
             backgroundPosition: "0% 50%",
@@ -394,9 +397,9 @@ export default function Home() {
             Try Taskey
             <ArrowRight size={15} />
           </button>
-        </section>
+        </AnimatedSection>
 
-        <section className="w-full lg:min-h-screen px-4 sm:px-8 lg:px-16 xl:px-40 py-16 sm:py-20 lg:py-24 flex flex-col justify-center items-center text-black gap-16 lg:gap-10">
+        <AnimatedSection className="w-full lg:min-h-screen px-4 sm:px-8 lg:px-16 xl:px-40 py-16 sm:py-20 lg:py-24 flex flex-col justify-center items-center text-black gap-16 lg:gap-10">
           <div className="w-full lg:min-h-[50vh] flex flex-col lg:flex-row justify-center items-center gap-10">
             <div className="w-full lg:w-1/2 h-full flex flex-col justify-center items-center text-center lg:items-start lg:text-left gap-5">
               <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight lg:leading-16">
@@ -460,9 +463,9 @@ export default function Home() {
               ))}
             </div>
           </div>
-        </section>
+        </AnimatedSection>
 
-        <section
+        <AnimatedSection
           style={{
             backgroundImage: "url('/bgWires4.png')"
           }}
@@ -491,9 +494,9 @@ export default function Home() {
               <ArrowRight size={15} />
             </button>
           </div>
-        </section>
+        </AnimatedSection>
 
-        <section className="w-full lg:min-h-screen px-4 sm:px-8 lg:px-16 xl:px-40 py-16 sm:py-20 lg:py-24 flex flex-col justify-center items-center gap-10 text-black">
+        <AnimatedSection className="w-full lg:min-h-screen px-4 sm:px-8 lg:px-16 xl:px-40 py-16 sm:py-20 lg:py-24 flex flex-col justify-center items-center gap-10 text-black">
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight lg:leading-16 text-center">
             What our client
             <span
@@ -511,8 +514,9 @@ export default function Home() {
 
           <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {testimonials.map((t, i) => (
-              <div
+              <AnimatedCard
                 key={i}
+                delay={i * 0.15}
                 className={`flex flex-col justify-between gap-6 p-8 rounded-2xl ${t.isHighlighted
                   ? "bg-[#4F9CF9] text-white"
                   : "bg-white text-black shadow-md"
@@ -554,12 +558,12 @@ export default function Home() {
                     </span>
                   </div>
                 </div>
-              </div>
+              </AnimatedCard>
             ))}
           </div>
-        </section>
+        </AnimatedSection>
 
-        <section className="bg-[#043873] w-full lg:min-h-[80vh] px-4 sm:px-8 lg:px-16 xl:px-40 py-16 sm:py-20 lg:py-24 flex flex-col justify-center items-center gap-5 text-center">
+        <AnimatedSection className="bg-[#043873] w-full lg:min-h-[80vh] px-4 sm:px-8 lg:px-16 xl:px-40 py-16 sm:py-20 lg:py-24 flex flex-col justify-center items-center gap-5 text-center">
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight lg:leading-16">
             Try Whitespace today
           </h2>
@@ -580,7 +584,7 @@ export default function Home() {
             alt="app-icon"
             className="w-32 sm:w-40 lg:w-50 h-auto"
           />
-        </section>
+        </AnimatedSection>
         <Footer />
       </div>
     </>
