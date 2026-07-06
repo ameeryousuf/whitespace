@@ -1,0 +1,75 @@
+import React from 'react';
+import { ArrowRight, Building2, Earth } from 'lucide-react';
+import Image from 'next/image';
+
+export default function Footer() {
+    return (
+        <>
+            <div className='bg-[#043873] w-full min-h-[40vh] py-10 px-40 flex flex-col justify-center items-center text-white'>
+                <div className='min-h-[30vh] w-full grid grid-cols-5 grid-rows-1 gap-6'>
+                    <div className='min-h-[30vh] w-full flex flex-col justify-start items-start gap-2'>
+                        <a
+                            href='/'
+                            className='flex gap-2 text-xl font-bold hover:cursor-pointer text-white'
+                        >
+                            <Building2 size={30} />
+                            WhiteSpace
+                        </a>
+                        <p className='text-gray-200'>
+                            WhiteSpace was created for the new ways we live and work. We make a better workspace around the world.
+                        </p>
+                    </div>
+                    <ul className='min-h-[30vh] w-full flex flex-col justify-start items-start gap-5'>
+                        <li className='font-bold text-white'>Product</li>
+                        <li className='w-full text-gray-200'>Overview</li>
+                        <li className='w-full text-gray-200'>Pricing</li>
+                        <li className='w-full text-gray-200'>Customer stories</li>
+                    </ul>
+                    <ul className='min-h-[30vh] w-full flex flex-col justify-start items-start gap-5'>
+                        <li className='font-bold text-white'>Resources</li>
+                        <li className='w-full text-gray-200'>Blog</li>
+                        <li className='w-full text-gray-200'>Guides & tutorials</li>
+                        <li className='w-full text-gray-200'>Help center</li>
+                    </ul>
+                    <ul className='min-h-[30vh] w-full flex flex-col justify-start items-start gap-5'>
+                        <li className='font-bold text-white'>Company</li>
+                        <li className='w-full text-gray-200'>About us</li>
+                        <li className='w-full text-gray-200'>Careers</li>
+                        <li className='w-full text-gray-200'>Media Kit</li>
+                    </ul>
+                    <div className='min-h-[30vh] w-full flex flex-col justify-start items-start gap-5'>
+                        <h1 className='text-2xl font-bold text-white'>Try it Today</h1>
+                        <p className='text-gray-200'>
+                            Get started for free. Add your whole team as your needs grow.
+                        </p>
+                        <button className="text-white bg-[#4F9CF9] text-sm px-6 py-2 rounded-sm hover:cursor-pointer duration-300 transition-all ease-out flex justify-center items-center gap-2">
+                            Start Today
+                            <ArrowRight size={15} />
+                        </button>
+                    </div>
+                </div>
+                <div className='w-full h-[10vh] py-2 flex justify-between items-center border-t border-gray-400'>
+                    <ul className='flex justify-start items-center gap-4'>
+                        <li className='flex justify-start items-center gap-2'>
+                            <span className='flex justify-start items-center gap-1'>
+                                <Earth size={15} />
+                                English
+                            </span>
+                            <ArrowRight size={15} />
+                        </li>
+                        <li>Terms & Privacy</li>
+                        <li>Security</li>
+                        <li>Status</li>
+                        <li>©2021 Whitespace LLC.</li>
+                    </ul>
+                    <Image
+                        src={'/Social Icon.png'}
+                        width={100}
+                        height={100}
+                        alt='social-icon'
+                    />
+                </div>
+            </div >
+        </>
+    )
+}
